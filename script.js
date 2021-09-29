@@ -3,7 +3,7 @@
 
 async function getdata(){
     try{
-         for(i=1;i<52;i++){
+         for(i=1;i<51;i++){
         let data= await fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`);
         value = await data.json()
       
