@@ -9,17 +9,17 @@ async function getdata(){
       
         c=value
         let nam =c.name
-        console.log(nam);
+        
         let abi=[]
         c.abilities.forEach(element => {
         abi.push(element.ability.name);});
-        console.log(abi);
+        
         let mov=[]
         c.moves.forEach(element => {
         mov.push(element.move.name);});
-        console.log(mov);
+        
         let wei=c.weight
-        console.log(wei);
+        
     let table=document.querySelector("#tbody")
     let cell=document.createElement("tr")
     let sno=document.createElement("td")
@@ -43,7 +43,7 @@ async function getdata(){
         }
        
 } catch(error){
-        console.log(`Please check the error message :${error}`);
+       
         document.writeln(`Please check the error message :${error}`)
 
     }
